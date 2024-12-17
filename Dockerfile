@@ -13,7 +13,7 @@ FROM osrf/ros:noetic-desktop-full
 
 # Dependencies we use, catkin tools is very good build system
 # Also some helper utilities for fast in terminal edits (nano etc)
-RUN apt-get update && apt-get install -y libeigen3-dev nano git
+RUN apt-get update && apt-get install -y libeigen3-dev nano git tmux
 RUN sudo apt-get install -y python3-catkin-tools python3-osrf-pycommon
 
 # Ceres solver install and setup
